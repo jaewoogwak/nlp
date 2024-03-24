@@ -1,5 +1,7 @@
 # NLP Assignment1
 
+2019136009 곽재우
+
 ## 1. 영어로된 영화 리뷰 데이터 전처리 (40점)
 
 -   Kaggle에서 제공하는 Movie Review Dataset(https://www.kaggle.com/datasets/vipulgandhi/movie-review-dataset?resource=download)를 전처리하여 Vocab을 구성하시오.

@@ -1,0 +1,20 @@
+  | Name  | Type                | Params
+----------------------------------------------
+0 | model | SentimentClassifier | 1.7 M
+1 | loss  | CrossEntropyLoss    | 0
+----------------------------------------------
+1.7 M     Trainable params
+0         Non-trainable params
+1.7 M     Total params
+6.789     Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:436: Consider setting `persistent_workers=True` in 'val_dataloader' to speed up the dataloader worker initialization.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...

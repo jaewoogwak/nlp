@@ -1,0 +1,145 @@
+  | Name  | Type                | Params
+----------------------------------------------
+0 | model | SentimentClassifier | 1.7 M
+1 | loss  | CrossEntropyLoss    | 0
+----------------------------------------------
+1.7 M     Trainable params
+0         Non-trainable params
+1.7 M     Total params
+6.789     Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:436: Consider setting `persistent_workers=True` in 'val_dataloader' to speed up the dataloader worker initialization.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+No such comm: 2432fa2919b44ad482655be89732fae1
+No such comm: f88e630444ac42599082e32f2b2bfbf7
+No such comm: 896f54d176b24600a0aadfb570c394db
+No such comm: 5050ccbdf2824effb61e30e37e83e8b2
+No such comm: a3e04669708149e7b2ca227fd862683a
+No such comm: 16d2f6c1ceaf45beb46a273000f777ca
+No such comm: 570848fe9cb64d098161602910ff28f0
+No such comm: 442c6f2309a447ce99e5d167edb3bc4f
+No such comm: 6bf505c6a3164162b54fa55f14d4320d
+No such comm: 7926ca74f9df41ab948b1d8e64cb98b5
+No such comm: 4b30abaef547459884faa5749d8202a2
+No such comm: cc97b2be4d9b42f6b1b5357abf54271f
+No such comm: 491391bb57d745d5b4cd77ccff352750
+No such comm: 2fdf7b0ed33d43cfb27c81f00e19b7ee
+No such comm: e04a7cf1527c4e8cac88b4773cee91dd
+No such comm: 278b62885b144cabaa2548ff022a9e48
+No such comm: 020167c303d1459383ff32d995311e66
+No such comm: b5a77e96625f4119b7492628a7851069
+No such comm: 1ba1337ab5b840c8929d5a89f3661412
+No such comm: 8a1cd1b10cce4f73a3e2ef1958924773
+No such comm: 9da02517aac54fa8837a49e0d7c99298
+No such comm: 29bd10c430124de68bcdef4b6d848fcb
+No such comm: 93cbc74f1aa1405eaca6f2881e5abbf0
+No such comm: 9888718dc3a64d0e9eec40647ec24634
+No such comm: bd756264cbf94b818f6913164dd58d0b
+No such comm: 3fe20c7f22334676a62caf77358b7083
+No such comm: 544d4fa780fd4477870b99d521b9632f
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Vocab size: 43031
+Vocab items: [('[PAD]', 0), ('[UNK]', 1), ('assume', 2), ('nothing', 3), ('.', 4)]
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/utilities/parsing.py:199: Attribute 'sentiment_classifier' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['sentiment_classifier'])`.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/loggers/wandb.py:391: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  | Name  | Type                | Params
+----------------------------------------------
+0 | model | SentimentClassifier | 1.7 M
+1 | loss  | CrossEntropyLoss    | 0
+----------------------------------------------
+1.7 M     Trainable params
+0         Non-trainable params
+1.7 M     Total params
+6.789     Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+No such comm: 15f4531fec4b4f6ab162ffcc7c9f0047
+No such comm: 089ee9aa96bb419dabb2c5b09c7c0106
+No such comm: 19b0f2754fda4f7fabcbdc76a492b3c8
+No such comm: 8dca57f8da9a4cfd957094cb1bd9d440
+No such comm: 177db69448834c9e8f5109c128c08f3b
+No such comm: 69c4e3f15aa94ef195f2d24429a5031a
+No such comm: 5e71fc349a0141078f9d94e7121ed201
+No such comm: 04542e7990b54cd8ab4c04e0ed063404
+No such comm: 8c8fe7bdc5cc47b6b5d6582bc06e2aaf
+No such comm: 89596c7ba28a43339fabaafab3e9c127
+No such comm: b5aabae8b952497ba0e65e562b0af89a
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type                | Params
+----------------------------------------------
+0 | model | SentimentClassifier | 1.7 M
+1 | loss  | CrossEntropyLoss    | 0
+----------------------------------------------
+1.7 M     Trainable params
+0         Non-trainable params
+1.7 M     Total params
+6.789     Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+No such comm: bb0f6a0e4059484e9a92d0cf1efbe239
+No such comm: 8455d5888c7443248e57a1a0926a2ef8
+No such comm: af25b82cc88d4956839f55f7279a655a
+No such comm: 9f18dcf9c3424d20b18fe518095b90ff
+No such comm: 9ad30edf95ea4679b1623f1d774d219f
+No such comm: fa5eb93dca17432c9e37565cb2bd417f
+No such comm: fd5ac70e652a4b44a7b3c8dae37c421e
+No such comm: 6edbe67ad94f412b853e5d0c8aace0a7
+No such comm: 8bf1c266248442c1b3cb7e123db44cd8
+No such comm: 401ffc9120ce488ebf8fb5a7a3b51eb1
+No such comm: cc0c402ef6f341528504fc632d16f906
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Vocab size: 43031
+Vocab items: [('[PAD]', 0), ('[UNK]', 1), ('assume', 2), ('nothing', 3), ('.', 4)]
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name  | Type                | Params
+----------------------------------------------
+0 | model | SentimentClassifier | 1.7 M
+1 | loss  | CrossEntropyLoss    | 0
+----------------------------------------------
+1.7 M     Trainable params
+0         Non-trainable params
+1.7 M     Total params
+6.789     Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>

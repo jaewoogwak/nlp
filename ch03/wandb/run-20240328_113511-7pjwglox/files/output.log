@@ -1,0 +1,47 @@
+  | Name  | Type                | Params
+----------------------------------------------
+0 | model | SentimentClassifier | 1.2 M
+1 | loss  | CrossEntropyLoss    | 0
+----------------------------------------------
+1.2 M     Trainable params
+0         Non-trainable params
+1.2 M     Total params
+4.604     Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:436: Consider setting `persistent_workers=True` in 'val_dataloader' to speed up the dataloader worker initialization.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+No such comm: c7bf9965dbb44ef3b1df6310579584f8
+No such comm: b19d5c156c8646ae9986be1e7f61e5a6
+No such comm: c46d444473884ec3ad09fd3a42ea3d8f
+No such comm: 3f1d4fcbfd1944a6ad88ebfc8c699291
+No such comm: a7ba4595bc3c4bd08302c0f412531c85
+No such comm: f73709af37924429b5ce75d7ac4efd32
+No such comm: 0bce940c7edb4d27878d7cf3315fdfc0
+No such comm: 7e0719b6f7254e8d98b7f5f7d741466d
+No such comm: 467ac2b5bffa4e719d1247ea3a8c74a3
+No such comm: caf22c031c3f4e0390bd4df10b71d569
+No such comm: 7d399b06ab9b4640b1eaafdca1a56a39
+No such comm: 7e335ab0ffce4b569aa188f99215dc7c
+No such comm: ba24d632ea4b44f283f7472a89b485cb
+No such comm: 09fb3e73b81d45bab0edbfe9d4b08816
+No such comm: d8c9ae2e56574a0b8a9ec715a54294a1
+No such comm: fd9b759aefea405eb38b079df7ba0b88
+No such comm: 90b853f115b849f4ad5216abcefe1288
+No such comm: 867367b20b0442debe4671595afbf8b0
+No such comm: ca08518cf44e4ae48d61518d6a5244be
+No such comm: 7f172e8b01b044f6bc248218252daacb
+No such comm: 5a0e8928ae08408aa0668e07d4987630
+No such comm: 33471128d3544a20b0dcc7f9aa251175
+No such comm: 9500f2b6e1ea482d9b160a77a65d8242
+No such comm: a41c148d0c304ee89cce411c74154146
+No such comm: ff18b877f8e44ac38f4f99672088c4a6
+No such comm: 99b41b398aa14e7fb396a2c9d85ba3b5

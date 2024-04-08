@@ -1,0 +1,431 @@
+   | Name               | Type             | Params
+---------------------------------------------------------
+0  | model              | TextCNN          | 12.8 M
+1  | model.SG_embedding | Embedding        | 5.9 M
+2  | model.RD_embedding | Embedding        | 5.9 M
+3  | model.SG_conv1     | Conv2d           | 120 K
+4  | model.SG_conv2     | Conv2d           | 160 K
+5  | model.SG_conv3     | Conv2d           | 200 K
+6  | model.RD_conv1     | Conv2d           | 120 K
+7  | model.RD_conv2     | Conv2d           | 160 K
+8  | model.RD_conv3     | Conv2d           | 200 K
+9  | model.fc           | Linear           | 2.4 K
+10 | loss               | CrossEntropyLoss | 0
+---------------------------------------------------------
+6.9 M     Trainable params
+5.9 M     Non-trainable params
+12.8 M    Total params
+51.126    Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+No such comm: 4ffa1cefbff9410f92407b4072c32ddb
+No such comm: ad991634fca64bd59dc261017c2c817b
+No such comm: d7ccef727a24431badf03768087c34ec
+No such comm: 584889bc52f046b992ef4cf0d6264d7f
+No such comm: 3e1f2d605acd4193a956cc4cdfdb6daa
+No such comm: 074f8e1963da4e188d58c20610675107
+No such comm: c027305192a04b969e4aacd755287e9a
+No such comm: 4d26b540864a45af9048ce93b86cfc75
+No such comm: 3558a78a90e04b2db11b06f9d848fae0
+No such comm: 386308eebcfb45c7893aa4e421210a09
+No such comm: 11014864dfe040ce9d5c0f17e63db0a7
+No such comm: 1d59384b976d4ed287fd164a1f262e74
+No such comm: ace32e9c00db41908f8e24f54351654d
+No such comm: 024a052eda6c4322b68d845a630680b3
+No such comm: 3e56cb783bb44e548f7fe3b79b75503e
+No such comm: 4492d2c3ec4043cfa4aee46c9a95dc13
+No such comm: b1112de2e8d7441c9703d2ffc0103472
+No such comm: b28983a3c026438f83d5f15d91e91577
+No such comm: fc3d30052b794aa29ad9559955104484
+No such comm: 27e8424d5c724f1383347e01d3aae891
+No such comm: cbfcd61bf96a4076b38beb15e7af3099
+No such comm: a2e546bfd2924e89a5eadab801ac9d72
+No such comm: 150fc33c2323422c99da190c455035d3
+No such comm: f50fad92a11d465395863309a335b595
+No such comm: 3c26faa2b0b840a7a83bae1fe9a1c711
+No such comm: d691b1da22fd4cccae09545c4b8213fa
+No such comm: a899a92a3849478e934469a3bc95161b
+No such comm: e6f9dde4f0cb4db8aa0ce9eefcb0db60
+No such comm: e1656c8d149447b8b0b5a320a9425e62
+No such comm: 5ef115012c6a40dca67913862225d2f4
+No such comm: f13a37c6625d4a60b7b855506b24681f
+No such comm: 62c5dc5e4133420bb79b0c0ff547991c
+No such comm: 60f59bb65656467da55403180b18f784
+No such comm: 0413632b905c4b4c85d354d3c74e07da
+No such comm: 01208c1f4b844a56b2052d956ae49766
+No such comm: c36faad7956545eebf2908fa71b179f9
+No such comm: b430b55103634fc2af21aa80bb66513b
+No such comm: 0a4695fd632742fc97f46397cfe92546
+(29545, 150)
+29545
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/utilities/parsing.py:199: Attribute 'sentiment_classifier' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['sentiment_classifier'])`.
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/loggers/wandb.py:391: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+   | Name               | Type             | Params
+---------------------------------------------------------
+0  | model              | TextCNN          | 11.3 M
+1  | model.SG_embedding | Embedding        | 4.4 M
+2  | model.RD_embedding | Embedding        | 5.9 M
+3  | model.SG_conv1     | Conv2d           | 120 K
+4  | model.SG_conv2     | Conv2d           | 160 K
+5  | model.SG_conv3     | Conv2d           | 200 K
+6  | model.RD_conv1     | Conv2d           | 120 K
+7  | model.RD_conv2     | Conv2d           | 160 K
+8  | model.RD_conv3     | Conv2d           | 200 K
+9  | model.fc           | Linear           | 2.4 K
+10 | loss               | CrossEntropyLoss | 0
+---------------------------------------------------------
+6.9 M     Trainable params
+4.4 M     Non-trainable params
+11.3 M    Total params
+45.217    Total estimated model params size (MB)
+No such comm: 02cb6d3d3bdf4f1cb608d29de53614e7
+No such comm: 213892621efb4d8aa3b4d74fa5319f5f
+No such comm: 72d85112998d4db0af2699a249b86cb2
+No such comm: cbb0d52615d24b638ffe070e43243864
+No such comm: 63809da0079d475197d8f09b5945eed1
+No such comm: fafd74a568d341dc8712031037278bfa
+No such comm: 28c74fe6adb14b92aa966adde9571672
+No such comm: 4f9be3c4a2134204820c5f845a016adf
+No such comm: 29c13fc667d8410c9898669ce7d39ffe
+No such comm: 80a80a5bb60548d688ad96461e84df11
+No such comm: a5835bf06d024b96be7b61760738492a
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+   | Name               | Type             | Params
+---------------------------------------------------------
+0  | model              | TextCNN          | 9.4 M
+1  | model.SG_embedding | Embedding        | 4.4 M
+2  | model.RD_embedding | Embedding        | 4.4 M
+3  | model.SG_conv1     | Conv2d           | 67.7 K
+4  | model.SG_conv2     | Conv2d           | 90.2 K
+5  | model.SG_conv3     | Conv2d           | 112 K
+6  | model.RD_conv1     | Conv2d           | 67.7 K
+7  | model.RD_conv2     | Conv2d           | 90.2 K
+8  | model.RD_conv3     | Conv2d           | 112 K
+9  | model.fc           | Linear           | 1.8 K
+10 | loss               | CrossEntropyLoss | 0
+---------------------------------------------------------
+5.0 M     Trainable params
+4.4 M     Non-trainable params
+9.4 M     Total params
+37.625    Total estimated model params size (MB)
+No such comm: 4560bdc43dfe449c92a36a8eb754f4e2
+No such comm: d339f7e3582f461db0a4c76ade81fc50
+No such comm: 5088699457ca41d1981bbf70422b6004
+No such comm: 94740a72e96d49d0a609c6cd30eda836
+No such comm: e44ab39aa25e43fa9328b4cce8303afa
+No such comm: 7d87e43d573942f7878268a65c4981c4
+No such comm: 2d06498dfd7b4e9bbf6dea10b379171b
+No such comm: 5e1f8a8460694caeb2974031c8afcbeb
+No such comm: 91c78100060944b1acfdc958d74b26e8
+No such comm: 1d7ec783e27a430896e5086ec9de7f1f
+No such comm: 874bd881924e4bb689cb45a955174d88
+No such comm: e0f545669e9d44fcbd56130f9fa31a6a
+No such comm: 4715b6ac0fca4310a35145cbef79c9ba
+No such comm: 239c6d240a2a455b9711be3fdc2e4529
+No such comm: 2c7c36954eac4cbea4d7e31337765e75
+No such comm: 91eff46f09a54546b684951d3a04dc72
+No such comm: 9336cda4ad8d4bd0ae208eb2458562bd
+No such comm: fd6961a71cff4f5894c76e27810f0161
+No such comm: f1ff6637b0294703923bc1b8f70bcd77
+No such comm: 7e5208e292d243d9893bc4d89e5f9b6b
+No such comm: 579d21fb401243a298c1606decc392c5
+No such comm: 19e12e53213e41c39701d9d47fd4bee4
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/jaewoogwak/nltk_data...
+['movie', 'get', 'respect', 'sure', 'lot', 'memorable', 'quote', 'list', 'gem', 'imagine', 'movie', 'joe', 'piscopo', 'actually', 'funny', 'maureen', 'stapleton', 'scene', 'stealer', 'moroni', 'character', 'absolute', 'scream', 'watch', 'alan', 'skipper', 'hale', 'jr', 'police', 'sgt']
+['bizarre', 'horror', 'movie', 'fill', 'famous', 'face', 'steal', 'cristina', 'raines', 'late', 'tvs', 'flamingo', 'road', 'pretty', 'somewhat', 'unstable', 'model', 'gummy', 'smile', 'slat', 'pay', 'attempt', 'suicide', 'guard', 'gateway', 'hell', 'scene', 'raines', 'model', 'well', 'capture', 'mood', 'music', 'perfect', 'deborah', 'raffin', 'charm', 'cristinas', 'pal', 'raines', 'move', 'creepy', 'brooklyn', 'height', 'brownstone', 'inhabit', 'blind', 'priest', 'top', 'floor', 'thing', 'really', 'start', 'cook', 'neighbor', 'include', 'fantastically', 'wicked', 'burgess', 'meredith', 'kinky', 'couple', 'sylvia', 'mile', 'beverly', 'dangelo', 'diabolical', 'lot', 'eli', 'wallach', 'great', 'fun', 'wily', 'police', 'detective', 'movie', 'nearly', 'crosspollination', 'rosemary', 'baby', 'exorcistbut', 'combination', 'base', 'bestseller', 'jeffrey', 'konvitz', 'sentinel', 'entertainingly', 'spooky', 'full', 'shock', 'bring', 'well', 'director', 'michael', 'winner', 'mount', 'thoughtfully', 'downbeat', 'end', 'skill', '12']
+(35811, 150)
+35811
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/utilities/parsing.py:199: Attribute 'sentiment_classifier' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['sentiment_classifier'])`.
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/loggers/wandb.py:391: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+   | Name               | Type             | Params
+---------------------------------------------------------
+0  | model              | TextCNN          | 11.3 M
+1  | model.SG_embedding | Embedding        | 5.4 M
+2  | model.RD_embedding | Embedding        | 5.4 M
+3  | model.SG_conv1     | Conv2d           | 67.7 K
+4  | model.SG_conv2     | Conv2d           | 90.2 K
+5  | model.SG_conv3     | Conv2d           | 112 K
+6  | model.RD_conv1     | Conv2d           | 67.7 K
+7  | model.RD_conv2     | Conv2d           | 90.2 K
+8  | model.RD_conv3     | Conv2d           | 112 K
+9  | model.fc           | Linear           | 1.8 K
+10 | loss               | CrossEntropyLoss | 0
+---------------------------------------------------------
+5.9 M     Trainable params
+5.4 M     Non-trainable params
+11.3 M    Total params
+45.144    Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+No such comm: 77ba648836454e23bd6cccef4a10737e
+No such comm: 4564b70cb65b4d10b06026063ad12087
+No such comm: 472a177b09a143698ee3e6439d6dea4f
+No such comm: 7691cb3a45604876bc45d98837f02a83
+No such comm: bffcf89c87b049a6a33ff607566de7a0
+No such comm: d7e078dcd5b94ab488ae2a02864cc83b
+No such comm: 07803e7f8fcc4b568a3531b92a277dfe
+No such comm: 37748f568c31412ab851cb54565105ea
+No such comm: 1a2b41723ee3435eb5391086f60c7d58
+No such comm: dcfd82413970413b95192111efe814b8
+No such comm: f16c2b8d556742418152f8816aa52695
+No such comm: a1aa9606416d408e958fa9a62d3e4375
+No such comm: d129acc45f6e4e33b53eeb1e19746683
+No such comm: fc29a6fb3eac4586a019e1ae1618c809
+No such comm: b1f8ce12482a4e2f92466a33fbd0e43d
+No such comm: 080f8e128d7c4f87b4c201694efffa7b
+No such comm: 5d73c63a37e34e24ae34df4454de900b
+No such comm: 680369f747a54a8e841771c441843091
+No such comm: e70acb7488aa4be089eea72b1de3b0d4
+No such comm: c03c28c3f18e46ba8e49074aed089fb5
+No such comm: 453e099ca9bb43b1a0cfa86f279a3f27
+No such comm: e29c51c4823c4079994ae4b6b2b58f4c
+wandb: Network error (ConnectionError), entering retry loop.
+Requirement already satisfied: nltk in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (3.8.1)
+Requirement already satisfied: click in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from nltk) (8.0.4)
+Requirement already satisfied: joblib in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from nltk) (1.2.0)
+Requirement already satisfied: regex>=2021.8.3 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from nltk) (2022.7.9)
+Requirement already satisfied: tqdm in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from nltk) (4.65.0)
+[nltk_data] Downloading package punkt to
+[nltk_data]     /Users/jaewoogwak/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/jaewoogwak/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+['movi', 'get', 'respect', 'sure', 'lot', 'memor', 'quot', 'list', 'gem', 'imagin', 'movi', 'joe', 'piscopo', 'actual', 'funni', 'maureen', 'stapleton', 'scene', 'stealer', 'moroni', 'charact', 'absolut', 'scream', 'watch', 'alan', 'skipper', 'hale', 'jr', 'polic', 'sgt']
+['bizarr', 'horror', 'movi', 'fill', 'famou', 'face', 'stolen', 'cristina', 'rain', 'later', 'tv', 'flamingo', 'road', 'pretti', 'somewhat', 'unstabl', 'model', 'gummi', 'smile', 'slate', 'pay', 'attempt', 'suicid', 'guard', 'gateway', 'hell', 'scene', 'rain', 'model', 'well', 'captur', 'mood', 'music', 'perfect', 'deborah', 'raffin', 'charm', 'cristina', 'pal', 'rain', 'move', 'creepi', 'brooklyn', 'height', 'brownston', 'inhabit', 'blind', 'priest', 'top', 'floor', 'thing', 'realli', 'start', 'cook', 'neighbor', 'includ', 'fantast', 'wick', 'burgess', 'meredith', 'kinki', 'coupl', 'sylvia', 'mile', 'beverli', 'dangelo', 'diabol', 'lot', 'eli', 'wallach', 'great', 'fun', 'wili', 'polic', 'detect', 'movi', 'nearli', 'crosspollin', 'rosemari', 'babi', 'exorcistbut', 'combin', 'base', 'bestsel', 'jeffrey', 'konvitz', 'sentinel', 'entertainingli', 'spooki', 'full', 'shock', 'brought', 'well', 'director', 'michael', 'winner', 'mount', 'thought', 'downbeat', 'end', 'skill', '12']
+(29545, 200)
+29545
+Requirement already satisfied: wandb in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (0.16.4)
+Requirement already satisfied: Click!=8.0.0,>=7.1 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (8.0.4)
+Requirement already satisfied: GitPython!=3.1.29,>=1.0.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (3.1.42)
+Requirement already satisfied: requests<3,>=2.0.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (2.31.0)
+Requirement already satisfied: psutil>=5.0.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (5.9.0)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (1.43.0)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (0.4.0)
+Requirement already satisfied: PyYAML in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (6.0)
+Requirement already satisfied: setproctitle in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (1.3.3)
+Requirement already satisfied: setuptools in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (68.0.0)
+Requirement already satisfied: appdirs>=1.4.3 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (1.4.4)
+Requirement already satisfied: protobuf!=4.21.0,<5,>=3.19.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from wandb) (4.25.3)
+Requirement already satisfied: six>=1.4.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from docker-pycreds>=0.4.0->wandb) (1.16.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from GitPython!=3.1.29,>=1.0.0->wandb) (4.0.11)
+Requirement already satisfied: charset-normalizer<4,>=2 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from requests<3,>=2.0.0->wandb) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from requests<3,>=2.0.0->wandb) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from requests<3,>=2.0.0->wandb) (2.2.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from requests<3,>=2.0.0->wandb) (2023.7.22)
+Requirement already satisfied: smmap<6,>=3.0.1 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from gitdb<5,>=4.0.1->GitPython!=3.1.29,>=1.0.0->wandb) (5.0.1)
+Requirement already satisfied: lightning in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (2.2.1)
+Requirement already satisfied: PyYAML<8.0,>=5.4 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (6.0)
+Requirement already satisfied: fsspec[http]<2025.0,>=2022.5.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (2023.4.0)
+Requirement already satisfied: lightning-utilities<2.0,>=0.8.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (0.11.0)
+Requirement already satisfied: numpy<3.0,>=1.17.2 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (1.24.3)
+Requirement already satisfied: packaging<25.0,>=20.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (23.2)
+Requirement already satisfied: torch<4.0,>=1.13.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (2.1.0)
+Requirement already satisfied: torchmetrics<3.0,>=0.7.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (1.3.2)
+Requirement already satisfied: tqdm<6.0,>=4.57.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (4.65.0)
+Requirement already satisfied: typing-extensions<6.0,>=4.4.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (4.10.0)
+Requirement already satisfied: pytorch-lightning in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning) (2.2.1)
+Requirement already satisfied: requests in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from fsspec[http]<2025.0,>=2022.5.0->lightning) (2.31.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from fsspec[http]<2025.0,>=2022.5.0->lightning) (3.8.3)
+Requirement already satisfied: setuptools in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from lightning-utilities<2.0,>=0.8.0->lightning) (68.0.0)
+Requirement already satisfied: filelock in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch<4.0,>=1.13.0->lightning) (3.9.0)
+Requirement already satisfied: sympy in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch<4.0,>=1.13.0->lightning) (1.11.1)
+Requirement already satisfied: networkx in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch<4.0,>=1.13.0->lightning) (3.1)
+Requirement already satisfied: jinja2 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from torch<4.0,>=1.13.0->lightning) (3.1.2)
+Requirement already satisfied: attrs>=17.3.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<2025.0,>=2022.5.0->lightning) (22.1.0)
+Requirement already satisfied: charset-normalizer<3.0,>=2.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<2025.0,>=2022.5.0->lightning) (2.1.1)
+Requirement already satisfied: multidict<7.0,>=4.5 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<2025.0,>=2022.5.0->lightning) (6.0.2)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<2025.0,>=2022.5.0->lightning) (4.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<2025.0,>=2022.5.0->lightning) (1.8.1)
+Requirement already satisfied: frozenlist>=1.1.1 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<2025.0,>=2022.5.0->lightning) (1.3.3)
+Requirement already satisfied: aiosignal>=1.1.2 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<2025.0,>=2022.5.0->lightning) (1.2.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from jinja2->torch<4.0,>=1.13.0->lightning) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from requests->fsspec[http]<2025.0,>=2022.5.0->lightning) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from requests->fsspec[http]<2025.0,>=2022.5.0->lightning) (2.2.1)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from requests->fsspec[http]<2025.0,>=2022.5.0->lightning) (2023.7.22)
+Requirement already satisfied: mpmath>=0.19 in /Users/jaewoogwak/anaconda3/lib/python3.11/site-packages (from sympy->torch<4.0,>=1.13.0->lightning) (1.3.0)
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Training 데이터 문서 수: 25000
+Test 데이터 문서 수: 25000
+Training data 평균 token 수: 121.16
+Test data 평균 token 수: 118.39448
+Vocab size: 29545
+Vocab items: [('[PAD]', 0), ('[UNK]', 1), ('movi', 2), ('get', 3), ('respect', 4)]
+훈련 데이터에서 unk token 수
+unk 94125
+not unk 2934875
+total 3029000
+unk+not unk 3029000
+테스트 데이터에서 unk token 수
+unk 1415539
+not unk 1544323
+total 2959862
+unk+not unk 2959862
+(['movi', 'get', 'respect', 'sure', 'lot', 'memor', 'quot', 'list', 'gem', 'imagin', 'movi', 'joe', 'piscopo', 'actual', 'funni', 'maureen', 'stapleton', 'scene', 'stealer', 'moroni', 'charact', 'absolut', 'scream', 'watch', 'alan', 'skipper', 'hale', 'jr', 'polic', 'sgt'], 1)
+pos 1539460 neg 1489540
+pos_tokens ['movi', 'get', 'respect', 'sure', 'lot', 'memor', 'quot', 'list', 'gem', 'imagin', 'movi', 'joe', 'piscopo', 'actual', 'funni', 'maureen', 'stapleton', 'scene', 'stealer', 'moroni']
+neg_toekns ['work', 'one', 'best', 'shakespear', 'sourc', 'film', 'manag', 'credit', 'sourc', 'whilst', 'still', 'appeal', 'wider', 'audiencebranagh', 'steal', 'film', 'fishburn', 'nose', 'there', 'talent']
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+   | Name               | Type             | Params
+---------------------------------------------------------
+0  | model              | TextCNN          | 12.8 M
+1  | model.SG_embedding | Embedding        | 5.9 M
+2  | model.RD_embedding | Embedding        | 5.9 M
+3  | model.SG_conv1     | Conv2d           | 120 K
+4  | model.SG_conv2     | Conv2d           | 160 K
+5  | model.SG_conv3     | Conv2d           | 200 K
+6  | model.RD_conv1     | Conv2d           | 120 K
+7  | model.RD_conv2     | Conv2d           | 160 K
+8  | model.RD_conv3     | Conv2d           | 200 K
+9  | model.fc           | Linear           | 2.4 K
+10 | loss               | CrossEntropyLoss | 0
+---------------------------------------------------------
+6.9 M     Trainable params
+5.9 M     Non-trainable params
+12.8 M    Total params
+51.126    Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:436: Consider setting `persistent_workers=True` in 'val_dataloader' to speed up the dataloader worker initialization.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+No such comm: 1bce942f0b4141ef90e9260ac09059d7
+No such comm: 1bce942f0b4141ef90e9260ac09059d7
+No such comm: 36d26404c99e443ca5ef617e855efbef
+No such comm: 36d26404c99e443ca5ef617e855efbef
+No such comm: 14f54c2495864e7693dbc7db0ca4426c
+No such comm: 14f54c2495864e7693dbc7db0ca4426c
+No such comm: 5ec8035892b8410a9ec907266444d548
+No such comm: 5ec8035892b8410a9ec907266444d548
+No such comm: 0432a19f48a14bf98e0a46d9c1fae1de
+No such comm: 0432a19f48a14bf98e0a46d9c1fae1de
+No such comm: 99d5f7c87d8a47669a2dd59dd6a51d41
+No such comm: 99d5f7c87d8a47669a2dd59dd6a51d41
+No such comm: e8ebe9a73b5749e1b504b824e7b6d3bb
+No such comm: e8ebe9a73b5749e1b504b824e7b6d3bb
+No such comm: 7098d817aee740acbab53421c095d973
+No such comm: 7098d817aee740acbab53421c095d973
+No such comm: 2e9bae0d170b4537963aacbe1aaa6ca5
+No such comm: 2e9bae0d170b4537963aacbe1aaa6ca5
+No such comm: e06995d396d74c97aad1c351338f5455
+No such comm: e06995d396d74c97aad1c351338f5455
+No such comm: 0151be22620040f6981dd383f3d604b9
+No such comm: 0151be22620040f6981dd383f3d604b9
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/utilities/parsing.py:199: Attribute 'sentiment_classifier' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['sentiment_classifier'])`.
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/loggers/wandb.py:391: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+   | Name               | Type             | Params
+---------------------------------------------------------
+0  | model              | TextCNN          | 12.8 M
+1  | model.SG_embedding | Embedding        | 5.9 M
+2  | model.RD_embedding | Embedding        | 5.9 M
+3  | model.SG_conv1     | Conv2d           | 120 K
+4  | model.SG_conv2     | Conv2d           | 160 K
+5  | model.SG_conv3     | Conv2d           | 200 K
+6  | model.RD_conv1     | Conv2d           | 120 K
+7  | model.RD_conv2     | Conv2d           | 160 K
+8  | model.RD_conv3     | Conv2d           | 200 K
+9  | model.fc           | Linear           | 2.4 K
+10 | loss               | CrossEntropyLoss | 0
+---------------------------------------------------------
+6.9 M     Trainable params
+5.9 M     Non-trainable params
+12.8 M    Total params
+51.126    Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+No such comm: 007b96c1819a440a8ffd85ec3949ddfe
+No such comm: 007b96c1819a440a8ffd85ec3949ddfe
+No such comm: e51c38cd35f2426baa3d781e051935a3
+No such comm: e51c38cd35f2426baa3d781e051935a3
+No such comm: 8b00458dbd31462a9a44f3fbe702f0f3
+No such comm: 8b00458dbd31462a9a44f3fbe702f0f3
+No such comm: ff72b38532034dd0a5470a6e0b52c2a7
+No such comm: ff72b38532034dd0a5470a6e0b52c2a7
+No such comm: b88f2b5b05ea478eb7a85f921fb56059
+No such comm: b88f2b5b05ea478eb7a85f921fb56059
+No such comm: 194a5facb402476bab8324b139f6504d
+No such comm: 194a5facb402476bab8324b139f6504d
+No such comm: 9ae16e7d13a0403391957dd69ddec07a
+No such comm: 9ae16e7d13a0403391957dd69ddec07a
+No such comm: c19fc61170e149a48857d7ebed31dc03
+No such comm: c19fc61170e149a48857d7ebed31dc03
+No such comm: cf47016cd80446b79af78b4f26ed6445
+No such comm: cf47016cd80446b79af78b4f26ed6445
+No such comm: 465f3fd49db542bd901f42e010f155d1
+No such comm: 465f3fd49db542bd901f42e010f155d1
+No such comm: 134e3ee9c07340839ba19ff9ba87aa89
+No such comm: 134e3ee9c07340839ba19ff9ba87aa89
+No such comm: f5dfcbf0bfc74cb98e26e395cc7151d5
+No such comm: f5dfcbf0bfc74cb98e26e395cc7151d5
+No such comm: 7d627e97b38c4024a99d11e8aae1cbd3
+No such comm: 7d627e97b38c4024a99d11e8aae1cbd3
+No such comm: bf44e0501e5d43008fcc094fdb7e6fa4
+No such comm: bf44e0501e5d43008fcc094fdb7e6fa4
+No such comm: 92712df5c3ea4294875a9c2f4ee5292b
+No such comm: 92712df5c3ea4294875a9c2f4ee5292b
+No such comm: bd5cec8305df434297e16ff7e1321b41
+No such comm: bd5cec8305df434297e16ff7e1321b41
+No such comm: 54a7a78be74e47609258fff0ce2d6360
+No such comm: 54a7a78be74e47609258fff0ce2d6360
+No such comm: 0f7266cf013b4ef3896fa547fd8aab4f
+No such comm: 0f7266cf013b4ef3896fa547fd8aab4f
+No such comm: 9a2298c0b00f4bb594bf8babd2c38a5a
+No such comm: 9a2298c0b00f4bb594bf8babd2c38a5a
+No such comm: 3198b3063b9b447d89cb2f5c16d86b1e
+No such comm: 3198b3063b9b447d89cb2f5c16d86b1e
+No such comm: 5d7d12b243914a56ab2ade7252c76a91
+No such comm: 5d7d12b243914a56ab2ade7252c76a91
+No such comm: ec9a5a2945374904b34f1e20ead91ad9
+No such comm: ec9a5a2945374904b34f1e20ead91ad9
+Positive Tokens
+[('film', 24398), ('movi', 21784), ('one', 13506), ('like', 10091), ('time', 7882), ('good', 7478), ('see', 7251), ('stori', 7187), ('charact', 6867), ('make', 6662)]
+Negative Tokens
+[('movi', 27797), ('film', 21897), ('one', 12808), ('like', 11968), ('make', 7835), ('even', 7603), ('get', 7602), ('good', 7233), ('time', 7197), ('watch', 7181)]
+Positive Tokens
+[('film', 24398), ('movi', 21784), ('one', 13506), ('like', 10091), ('time', 7882), ('good', 7478), ('see', 7251), ('stori', 7187), ('charact', 6867), ('make', 6662)]
+Negative Tokens
+[('movi', 27797), ('film', 21897), ('one', 12808), ('like', 11968), ('make', 7835), ('even', 7603), ('get', 7602), ('good', 7233), ('time', 7197), ('watch', 7181)]
+Positive Tokens
+[('film', 24398), ('movi', 21784), ('one', 13506), ('like', 10091), ('time', 7882), ('good', 7478), ('see', 7251), ('stori', 7187), ('charact', 6867), ('make', 6662)]
+Negative Tokens
+[('movi', 27797), ('film', 21897), ('one', 12808), ('like', 11968), ('make', 7835), ('even', 7603), ('get', 7602), ('good', 7233), ('time', 7197), ('watch', 7181)]
+Positive Tokens
+[('athinodoro', 1), ('prousali', 1), ('stavro', 1), ('nikolaidi', 1), ('serieseven', 1), ('tvin', 1), ('ant1', 1), ('zoneswel', 1), ('imi', 1), ('jayden', 1)]
+Negative Tokens

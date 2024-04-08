@@ -1,0 +1,122 @@
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | model           | MLP              | 4.0 M
+1 | model.embedding | Embedding        | 3.0 M
+2 | model.fc1       | Linear           | 1.0 M
+3 | model.fc2       | Linear           | 202
+4 | loss            | CrossEntropyLoss | 0
+-----------------------------------------------------
+4.0 M     Trainable params
+0         Non-trainable params
+4.0 M     Total params
+15.819    Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:436: Consider setting `persistent_workers=True` in 'val_dataloader' to speed up the dataloader worker initialization.
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/checkpoint_connector.py:145: `.test(ckpt_path=None)` was called without a model. The best model of the previous `fit` call will be used. You can pass `.test(ckpt_path='best')` to use the best model or `.test(ckpt_path='last')` to use the last model. If you pass a value, this warning will be silenced.
+No such comm: dd6570a6287844c4af0708cc5531c8e6
+No such comm: dcb1f08ff1fc4e768fe572fd4095e8f9
+No such comm: 35edf39302714db3bb49da5460adae75
+No such comm: b08fe5f0a55941e991eb9293767dfe97
+No such comm: bfeb8328dc0e4f81904213a67e94d39f
+No such comm: e81b3ceebd5c4387b27bf128e58a7ab5
+No such comm: 31385dac691f4f6abbfb0ec5acea6f4d
+No such comm: 48e6e2ee4ff44240ac8e51aa97bb44f6
+No such comm: 84cf1e9c1276427ead9c58b3a84390bb
+No such comm: 8c43ac521ce349c5bd6719f41cabeba3
+No such comm: 88e654602e41429ab9d3a455b094724b
+No such comm: 87f0ae605d864eda874ba0257f2a3cd6
+No such comm: 87e84da1da034d77aca74f74d48890d2
+No such comm: 0f4b31eb5af74c77b98a28430120b2b1
+No such comm: b21efe6a54794cbe970b2180965259c8
+No such comm: 1fcba670b0514c2b92efbef32265bf22
+No such comm: d87f913454ee48a7831f222233ed40f2
+No such comm: 33b4d77b502b4526bcd9ea27741d50d4
+No such comm: 5abb1ed3cc464a6c933800918ae61369
+No such comm: 6860fecd4f3547da8a495bd2c9d35862
+No such comm: 7e57c56f8a6b4e2b96770629a219a14f
+No such comm: 9bf5f0581521484eb57cc36038d640b4
+No such comm: c92399328a4943d6ac654b2244c6bf57
+No such comm: d6913eace9fb47ebb286bc9b18408a7e
+No such comm: 1362a9490849475199ebe8c552e6c6ee
+No such comm: e71f9d70678c4a11931cebfe0bee6bb6
+No such comm: 8aa97cf5139f409a87e951e2618be4f7
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/utilities/parsing.py:199: Attribute 'sentiment_classifier' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['sentiment_classifier'])`.
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/loggers/wandb.py:391: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | model           | MLP              | 4.0 M
+1 | model.embedding | Embedding        | 3.0 M
+2 | model.fc1       | Linear           | 1.0 M
+3 | model.fc2       | Linear           | 202
+4 | loss            | CrossEntropyLoss | 0
+-----------------------------------------------------
+4.0 M     Trainable params
+0         Non-trainable params
+4.0 M     Total params
+15.819    Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 120, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jaewoogwak/anaconda3/lib/python3.11/multiprocessing/spawn.py", line 130, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'SentimentDataset' on <module '__main__' (built-in)>
+No such comm: 6e2b2ba86b09430fa1ecb366054de220
+No such comm: 40aa155493fb495c87094d22fc41530d
+No such comm: d547643918c641c99cb9fb24fb30d985
+No such comm: c3d583a0f4354ff1a1f9f81debe11b76
+No such comm: eca764bf53c7417fa9408b5208ce921e
+No such comm: 67195ccab03a43d1a95aff42ad5127fb
+No such comm: 673792dcdd244989b6703f7d250a5427
+No such comm: 47694a30dd1441d2a2fcfdea46b8e99a
+No such comm: 0c793a4671344030a52900eae130cee4
+No such comm: e3ca70f952fe405ca7e324b6d339c620
+No such comm: 452f1a48364d48148133d83485d74d14
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (mps), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+  | Name            | Type             | Params
+-----------------------------------------------------
+0 | model           | MLP              | 4.0 M
+1 | model.embedding | Embedding        | 3.0 M
+2 | model.fc1       | Linear           | 1.0 M
+3 | model.fc2       | Linear           | 202
+4 | loss            | CrossEntropyLoss | 0
+-----------------------------------------------------
+4.0 M     Trainable params
+0         Non-trainable params
+4.0 M     Total params
+15.819    Total estimated model params size (MB)
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+`Trainer.fit` stopped: `max_epochs=10` reached.
+Restoring states from the checkpoint path at ./NLP/5b94zyv7/checkpoints/epoch=9-step=3910.ckpt
+Loaded model weights from the checkpoint at ./NLP/5b94zyv7/checkpoints/epoch=9-step=3910.ckpt
+/Users/jaewoogwak/anaconda3/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:441: The 'test_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      avg_test_loss           0.711181640625
+      test_accuracy         0.8292799592018127
+        test_loss           0.7111597061157227
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

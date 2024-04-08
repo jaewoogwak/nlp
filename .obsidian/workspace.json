@@ -1,0 +1,175 @@
+{
+  "main": {
+    "id": "c4e9d7ea0aab244b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff1ca9bd8d1e4926",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d4561a6f51b3e8c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "homework/hw2/2019136009_곽재우_HW_2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "09f41733dac5a911",
+    "type": "split",
+    "children": [
+      {
+        "id": "69e20d2c41874636",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f654a85885a4da87",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0f6d576c114028b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bd477b47bcd384cb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "406db956ea6c6d39",
+    "type": "split",
+    "children": [
+      {
+        "id": "9870806a69ad51bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ece3f0fab2bbff2e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "homework/hw2/2019136009_곽재우_HW_2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a2e4c541a64cfdd2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "homework/hw2/2019136009_곽재우_HW_2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c7941ca49ce3b95f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "57ca7651f392ef2a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "homework/hw2/2019136009_곽재우_HW_2.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "d4561a6f51b3e8c9",
+  "lastOpenFiles": [
+    "homework/hw2/2019136009_곽재우_HW_2.pdf",
+    "homework/hw2/2019136009_곽재우_HW_2_tmp.html",
+    "assets/hw2/image16.png",
+    "assets/hw2/image copy.png",
+    "assets/hw2/image15.png",
+    "assets/hw2/image14.png",
+    "assets/hw2/image13.png",
+    "assets/hw2/image12.png",
+    "assets/hw2/image11.png",
+    "assets/hw2/image10.png",
+    "homework/hw2/Lec04_Homework.ipynb",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/files/output.log",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/files/requirements.txt",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/files/wandb-metadata.json",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/files/conda-environment.yaml",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/files/config.yaml",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/run-1uu7mm9o.wandb",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/logs/debug-internal.log",
+    "homework/hw2/wandb/run-20240408_152351-1uu7mm9o/tmp/code",
+    "assets/hw2/image9.png",
+    "assets/hw2/image8.png",
+    "homework/hw2/2019136009_곽재우_HW_2.md",
+    "homework/hw1/assignment1.md"
+  ]
+}

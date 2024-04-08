@@ -1,0 +1,36 @@
+{
+    "os": "macOS-14.2.1-arm64-arm-64bit",
+    "python": "3.11.4",
+    "heartbeatAt": "2024-04-08T06:09:00.995567",
+    "startedAt": "2024-04-08T06:08:58.241987",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/jaewoogwak/nlp.git",
+        "commit": "72b1edfdaf6747efc1bfdb8ff8154294a54e8c87"
+    },
+    "email": "jaewoo010207@gmail.com",
+    "root": "/Users/jaewoogwak/Desktop/dev/nlp",
+    "host": "gwagjaeuui-MacBookAir.local",
+    "username": "jaewoogwak",
+    "executable": "/Users/jaewoogwak/anaconda3/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 359.5630645751953
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
